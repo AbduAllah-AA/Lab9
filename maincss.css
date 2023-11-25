@@ -1,3 +1,6 @@
+body {
+    background-color: skyblue;
+}
 ul {
     list-style: none;
     margin: 0px;
@@ -7,25 +10,31 @@ ul {
     background-color: black;
     position: fixed;
     overflow: hidden;
+    top: 0;
+    left: 0;
 }
 li {
     display: inline;
     text-decoration: none;
-    /**background-color: gray;**/
 }
 li a{
     text-decoration: none;
     color: white ;
 }
-li a:visited{
 
-}
 li a:hover{
-    color: green;
+    color: blueviolet;
 }
 li a:active{
     color: brown;
 }
-.On {
+a {
+    display: block;
+    float: left;
+    padding: 20px;
+    text-align: center;
+  }
+
+.activeIcon {
     background-color: #04AA6D;
 }
