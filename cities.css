@@ -1,0 +1,36 @@
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+  }
+  .div1 {
+    max-width: 50%;
+    float: left;
+  }
+  .div2 {
+    max-width: 50%;
+    float: right;
+  }
+  div {
+    border: 0px solid white;
+  }
+  .fixSize {
+    display: table;
+  }
+  img {
+    max-width: 40%;
+    max-height: 50%;
+    float: left;
+  }
+  p {
+    font-size: larger;
+    text-align: left;
+    padding: 10px;
+  }
+  h1 {
+    padding-top: 60px;
+    text-align: center;
+    text-shadow: 2px 2px lightgray;
+    margin: 40px;
+  }

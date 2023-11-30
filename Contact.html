@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact</title>
+    <link rel="stylesheet" href="navbar.css"/>
+    <link rel="stylesheet" href="contact.css"/>
+    <style>
+      body {
+        background-color: black;
+      }
+      .test{
+        width: 60%;
+        height: 40px;
+        max-height: 40px;
+        margin: auto;
+        margin-top: 90px;
+        display: table;
+        text-align: center;
+        color: white;
+      }
+      .Nameslist {
+        list-style: none;
+        margin: 0;
+      }
+      .Nameslist div {
+        display: inline-flex;
+        justify-content: center;
+        width: auto;
+        margin: 0px 5px;
+        border-right: 5px solid crimson !important;
+        padding: 5px;
+        font-size: 30px;
+        font-weight: 700;
+        padding-bottom: 10px;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <nav class="mylist">
+      <ul>
+        <li><a class="items" href="index.html">Global City</a></li>
+        <li><a class="items" href="Amsterdam.html">Amsterdam</a></li>
+        <li><a class="items" href="Beijing.html">Beijing</a></li>
+        <li><a class="items" href="London.html">London</a></li>
+        <li><a class="items" href="Rome.htm">Roma</a></li>
+        <li><a class="items" href="Tokyo.htm">Tokyo</a></li>
+        <li><a class="items" href="#">Comparison</a></li>
+        <li><a class="items" id="ActivePage" href="Contact.html">About</a></li>
+      </ul>
+    </nav>
+    <div class="test">
+      <h1> Programed By:</h1><br>
+    <ul class="Nameslist">
+      <div>
+      <li>اصيل محمد حسن ال مقطوف</li></div>
+      <div><li >عادل جهز سعد المطيري</li></div>
+      <div><li >عبدالله عبده محمد سلامي</li></div>
+    </ul>
+  </div>
+    <input class="main-btn" id="H" style="position: absolute; margin:10% 0% 0% 44%;" type="button" value="Contact Us" onclick="document.getElementById('Form').style.visibility='visible';document.getElementById('H').style.visibility='hidden'">
+    <div class="formbox">
+      <form id="Form" action="SubmittingPage.html">
+        <label> Name:</label>
+        <input
+          type="text"
+          placeholder="Your Name"
+          minlength="3"
+          required
+          style="width: 90%;"
+        /><br />
+
+        <label>Email:</label>
+        <input type="email" placeholder="Em@il" required  style="width: 90%;"/><br />
+        <br />
+        <label>Title:</label><br>
+        <input type="radio" name="T" />
+         Suggestion
+        <input type="radio" name="T"/>
+         Complain
+     </label>
+        <br /><br />
+        <label>Feedback</label><br /><br />
+        <textarea style="border-radius: 5px;"
+          placeholder="Enter your massage"
+          rows="12"
+          cols="50"
+          style="max-width: 100%;"
+        ></textarea>
+        <br />
+
+        <input class="main-btn btn" type="reset" />
+        <input class="main-btn btn" type="submit" />
+      </form>
+    </div>
+    <script>
+      document.getElementById("Form").style.visibility='hidden';
+
+      var ul = document.querySelector(".Nameslist");
+      for (var i = ul.children.length; i >= 0; i--) {
+        ul.appendChild(ul.children[(Math.random() * i) | 0]);
+      }
+    </script>
+  </body>
+</html>

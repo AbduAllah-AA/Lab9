@@ -15,11 +15,15 @@ body,html {
      .mylist ul{
        margin: 0;
        padding: 0;
-       float: left;
        list-style-type: none;
     }
     .mylist ul li{
       float: left;
+      text-decoration: none;
+
+    }
+    .mylist li:last-child{
+      float: right;
     }
     
     .items{
