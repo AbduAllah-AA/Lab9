@@ -1,0 +1,38 @@
+body,html {
+    margin: 0;
+    padding: 0;
+    font: 1.03em sans-serif;
+    }
+     .mylist {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color:#333;
+      color: #fff;
+      height: 60px;
+      }
+     
+     .mylist ul{
+       margin: 0;
+       padding: 0;
+       float: left;
+       list-style-type: none;
+    }
+    .mylist ul li{
+      float: left;
+    }
+    
+    .items{
+     display: inline-block;
+     padding: 15px 20px;
+     height: 30px;
+     line-height: 30px;
+     color:#fff;
+     text-decoration: none;
+    }
+    .items:hover{
+      background-color:rgb(0, 102, 255);
+    }
+    #ActivePage {
+        background-color:rgb(0, 102, 255);
+    }

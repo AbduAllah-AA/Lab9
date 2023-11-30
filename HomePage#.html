@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+     body,html {
+      margin: 0;
+      padding: 0;
+      font: 1.03em sans-serif;
+      }
+       .mylist {
+        width: 100%;
+        background-color:#333;
+        color: #fff;
+        height: 60px;
+        }
+        .mylist #list {
+        float: left;
+        height: 30px;
+        padding: 15px 30px;
+        font-size: 1.2em;
+        line-height: 30px;
+       }
+       .mylist ul{
+         margin: 0;
+         padding: 0;
+         float: left;
+         list-style-type: none;
+      }
+      .mylist ul li{
+        float: left;
+      }
+      
+      .items{
+       display: inline-block;
+       padding: 15px 20px;
+       height: 30px;
+       line-height: 30px;
+       color:#fff;
+       text-decoration: none;
+      }
+      .items:hover{
+        background-color:rgb(0, 102, 255);
+      }
+      .list{
+        background-image:url(EE/SS.jpg);
+      }
+      .mainpagebox {
+        width: 950px;
+        height: 550px;
+        padding-top: 60px;
+        margin: 0;
+        margin: auto;
+      }
+      
+      </style>
+  </head>
+  <body style="background-color: black;">
+    <nav class="mylist">
+      <div id="list">Global city</div>
+      </div>        
+        <ul>
+       <li><a  class="items" href="Amsterdam.html">Nederland</a></li>
+       <li><a  class="items" href="#">Britain</a></li>
+       <li><a  class="items" href="#">Italy</a></li>
+       <li><a  class="items" href="#">Japan</a></li>
+       <li><a  class="items" href="#">China</a></li>
+       <li><a  class="items" href="#">About</a></li>
+       </ul>
+      </nav>
+       <div class="mainpagebox">
+        <video style="height: inherit; width: inherit" controls autoplay muted>
+          <source
+            src="City.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </div>
+  </body>
+</html>
